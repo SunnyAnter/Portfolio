@@ -4,7 +4,7 @@ import { Mail, BriefcaseBusiness, House, User, Instagram, Github, Linkedin } fro
 
 export default function SideNav() {
   return (
-    <div className="w-[15%] bg-[rgb(46,46,53)] h-screen shrink-0 fixed top-0 left-0 flex justify-center items-center">
+    <div className="w-[15%] bg-[rgb(46,46,53)] h-screen shrink-0 fixed top-0 left-0 justify-center items-center hidden lg:flex">
       <div className="h-[90%] w-[80%] flex flex-col items-center" id="main-box">
         <div className="flex w-full items-center gap-3" id="name-work">
           <div className="w-12 h-12 rounded-full bg-white shrink-0" />
