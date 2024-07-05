@@ -74,6 +74,3 @@
       @apply bg-background text-foreground;
     }
   }
-.nav-link:focus .icon {
-  color: rgb(204, 85, 0); /* Change to your desired color */
-}
