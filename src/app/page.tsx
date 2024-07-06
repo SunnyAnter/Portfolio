@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="h-[100vh] w-full flex justify-center items-center bg-[rgb(52,53,60)] lg:rounded-tl-3xl lg:mt-4 shadow-inner">
+    <div className="h-[100vh] w-full flex justify-center items-center bg-[rgb(52,53,60)] lg:rounded-tl-3xl lg:mt-4 lg:shadow-inner">
       <h1 className=" bg-red-500 rounded-lg p-4">Hello</h1>
     </div>
   );
