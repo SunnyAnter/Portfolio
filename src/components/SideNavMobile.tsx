@@ -42,9 +42,8 @@ export default function SideNavMobile() {
         </div>
         <div className="pt-[25%] pb-[25%] w-full flex flex-col gap-2" id="links">
             {navLinks.map(({ href, label, icon: Icon }) => (
-          <SheetClose asChild>
+          <SheetClose asChild key={href}>
             <Link
-              key={href}
               className={`nav-link w-[90%] text-sm ${pathname === href ? 'text-white bg-[rgb(33,33,40)] drop-shadow-xl' : 'text-gray-400'} p-2 rounded-md flex items-center gap-2`}
               href={href}
             >
@@ -56,9 +55,8 @@ export default function SideNavMobile() {
         <div className="w-full flex flex-col gap-2" id="socials">
           <h1 className="text-md text-white pb-[5%]">Socials</h1>
             {socialLinks.map(({ href, label, icon: Icon }) => (
-          <SheetClose>          
+          <SheetClose key={href}>          
             <Link
-              key={href}
               className="nav-link w-[90%] text-sm text-gray-400 p-2 rounded-md flex items-center gap-2"
               href={href}
               target="_blank"
