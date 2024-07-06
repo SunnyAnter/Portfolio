@@ -12,7 +12,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${roboto.className} flex bg-[rgb(46,46,53)]`}>
+      <body className={`${roboto.className} flex lg:bg-[rgb(46,46,53)] bg:[rgb(52,53,60)]`}>
         <SideNav />
         <SideNavMobile/>
       <div className="w-full h-screen lg:ml-[15%]">{children}</div> 
