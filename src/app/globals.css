@@ -74,3 +74,19 @@
       @apply bg-background text-foreground;
     }
   }
+  .nav-link:hover,
+  .nav-link:focus{
+    transform: translateX(0.20rem);
+  }
+.burger {
+    animation: dance 1.5s infinite; /* Adjust the duration as needed */
+}
+
+@keyframes dance {
+    0%, 100% {
+        transform: translateY(0); /* Starting and ending position */
+    }
+    50% {
+        transform: translateY(-0.2rem); /* Move up very slightly */
+    }
+}

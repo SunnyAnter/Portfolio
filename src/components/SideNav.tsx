@@ -35,6 +35,7 @@ export default function SideNav() {
               key={href}
               className={`nav-link w-[90%] text-sm ${pathname === href ? 'text-white bg-[rgb(33,33,40)] drop-shadow-xl' : 'text-gray-400'} hover:text-white p-2 rounded-md flex items-center gap-2`}
               href={href}
+              style={pathname === href ? { transform: 'translateX(0.20rem)' } : {}}
             >
               <Icon className="icon" size={14} style={{color: pathname === href ? 'rgb(204,85,0)': 'inherit'}}/> {label}
             </Link>
@@ -45,7 +46,7 @@ export default function SideNav() {
           {socialLinks.map(({ href, label, icon: Icon }) => (
             <Link
               key={href}
-              className="w-[90%] text-sm text-gray-400 hover:text-white p-2 rounded-md flex items-center gap-2"
+              className="nav-link w-[90%] text-sm text-gray-400 hover:text-white p-2 rounded-md flex items-center gap-2"
               href={href}
               target="_blank"
             >
