@@ -90,3 +90,82 @@
         transform: translateY(-0.2rem); /* Move up very slightly */
     }
 }
+.input-box{
+  position: relative;
+  width: 100%;
+}
+.input-box input,
+.input-box textarea{
+  width: 100%;
+  padding: 2vh;
+  border: 2px solid rgb(67,56,202);
+  background-color: rgb(52,53,60);
+  border-radius: 10px;
+  color: white;
+  font-size: 1em;
+  outline: none;
+}
+.input-box textarea{
+  padding: 6vh;
+}
+.input-box span {
+ position: absolute;
+ left: 0;
+ padding: 2vh;
+ pointer-events: none;
+ font-size: 1em;
+ color: rgb(67,56,202);
+ text-transform: uppercase;
+ transition: 0.5s;
+}
+.input-box input:valid ~ span, 
+.input-box input:focus ~ span, 
+.input-box textarea:valid ~ span,
+.input-box textarea:focus ~ span 
+{
+  transform: translateX(3vh) translateY(-7px);
+  font-size: 0.70em;
+  padding: 0 5px;
+  background-color: rgb(52,53,60);
+  letter-spacing: 0.2em;
+  transition: 0.5s;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active,
+input:-webkit-autofill:valid {
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0px 1000px rgb(52, 53, 60) inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+@media (min-width: 1024px) { /* lg breakpoint for larger screens */
+  .input-box input,
+  .input-box textarea {
+    background-color: rgb(42,42,49); /* Darker background for larger screens */
+    color: white; /* Light text for better contrast on dark background */
+  }
+  .input-box input:valid ~ span, 
+.input-box input:focus ~ span, 
+.input-box textarea:valid ~ span,
+.input-box textarea:focus ~ span 
+{
+  transform: translateX(10px) translateY(-7px);
+  font-size: 0.65em;
+  padding: 0 5px;
+  background-color: rgb(42,42,49);
+  letter-spacing: 0.2em;
+  transition: 0.5s;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active,
+input:-webkit-autofill:valid {
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0px 1000px rgb(42,42,49) inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+}
