@@ -1,4 +1,6 @@
 import LinkCard from "@/components/linkCards";
+import Hyve from '../../public/HyveMock.png';
+import Spot from '../../public/SpotMockup.png'
 
 export default function Home() {
   return (
@@ -11,9 +13,9 @@ export default function Home() {
           I create engaging and responsive user interfaces that provide exceptional user experiences.</h4>
          <h1 className="text-white text-lg lg:text-xl">What I&apos;ve been working on</h1>
         <div className="flex gap-6 flex-col lg:flex-row lg:justify-center items-center">
-        <LinkCard/>
-        <LinkCard/>
-        <LinkCard/>
+        <LinkCard image={Hyve} title={'Hyve'} href={'hyve'} description={'a task management app'}/>
+        <LinkCard image={Spot} title={'Spot'} href={'spot'} description={'a savvy social media app'}/>
+        <LinkCard image={Hyve} title={'Stitchmate'} href={'stitchmate'} description={'a stitching helper'}/>
         </div>
       </div>
     </div>
