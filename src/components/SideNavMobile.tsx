@@ -29,7 +29,7 @@ export default function SideNavMobile() {
   return (
     <Sheet>
       <SheetTrigger asChild className="lg:hidden">
-       <button className="burger fixed bottom-6 right-6 rounded-full h-14 w-14 bg-black text-white flex justify-center items-center drop-shadow-xl" ><Menu color="white" size={24} strokeWidth="3px"/></button>
+       <button className="burger fixed bottom-6 right-6 rounded-full h-14 w-14 bg-black text-white flex justify-center items-center drop-shadow-xl z-10" ><Menu color="white" size={24} strokeWidth="3px"/></button>
       </SheetTrigger>
       <SheetContent side="left" className="bg-[rgb(46,46,53)] pt-[10%]">
        <div className="h-[90%] w-[80%] flex flex-col items-center" id="main-box">
